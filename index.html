@@ -4,10 +4,23 @@
      	<link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
         <div class="container">
             <div class="item">
               <img alt="Turbojugen Ytrebygda" src="images/logo600.png" />
             </div>
         </div>
+        <script>
+        var egg = new Egg();
+egg.addCode("up,up,down,down", function() {
+    jQuery('#egggif').fadeIn(500, function() {
+      window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+    });
+  })
+  .addHook(function(){
+    console.log("Hook called for: " + this.activeEgg.keys);
+    console.log(this.activeEgg.metadata);
+  }).listen();
+    </script>
     </body>
 <html>
