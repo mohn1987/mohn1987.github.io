@@ -19,3 +19,5 @@ body {
             width: 100%;
         }
     }
+
+#egggif {position: absolute; top: 33%; left: 25%; display: none; }
