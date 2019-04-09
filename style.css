@@ -20,4 +20,9 @@ body {
         }
     }
 
-#egggif {position: absolute; top: 33%; left: 25%; display: none; }
+#egggif {
+    position: absolute; 
+    top: 0; 
+    height: 100%; 
+    display: none; 
+}
